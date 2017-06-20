@@ -5,7 +5,10 @@ CC=gcc
 objects = keyboard.o
 
 # start default rule:
-all:	shared
+# Options:
+# 	dynamic: on Mac OS
+#	shared: on Linux
+all:	dynamic
 
 dynamic:
 	rm -f libkeyboard.dylib
